@@ -7,7 +7,7 @@ const config = {
   ambiente: process.env.NODE_ENV || "development",
 
   jwtSecret: "REMOVIDO_JWT_SECRET",
-  apiKeyPagamentos: "REMOVIDO_API_KEY_PAGAMENTOS",
+  apiKeyPagamentos: process.env.API_KEY_PAGAMENTOS,
 };
 
 module.exports = config;
