@@ -37,7 +37,7 @@ Formato: «Como atacante, quero *fazer X*, para *conseguir Y*.»
 
 | # | Ameaça | Onde na API |
 |---|--------|-------------|
-| 1 |        |             |
-| 2 |        |             |
-| 3 |        |             |
-| 4 |        |             |
+| 1 |    1   |   auth.js   |
+| 2 |    8   | config.js   |
+| 3 |    9   |encomendas.js|
+| 4 |    3   |utilizadores.js|
