@@ -28,6 +28,8 @@ Formato: «Como atacante, quero *fazer X*, para *conseguir Y*.»
 
 11.Como atacante com acesso ao código/histórico git, quero obter a lista de utilizadores fixa em db.js (NIF, email, passwordHash), para conseguir dados pessoais e material para quebra de passwords offline. Ataque pasta db.js DANIANE
 
+12.Como atacante, quero descobrir a chave JWT para consseguir cria tokens falsos com qualquer utilizador. 
+
 
 ## As quatro que não aceitamos correr
 
