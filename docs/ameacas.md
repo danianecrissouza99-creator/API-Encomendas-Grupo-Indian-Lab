@@ -35,9 +35,9 @@ Formato: «Como atacante, quero *fazer X*, para *conseguir Y*.»
 
 ## As quatro que não aceitamos correr
 
-| # | Ameaça | Onde na API |
-|---|--------|-------------|
-| 1 |    1   |   auth.js   |
-| 2 |    8   | config.js   |
-| 3 |    9   |encomendas.js|
-| 4 |    3   |utilizadores.js|
+| # | Ameaça |  Onde na A PI |   Owner  |
+|---|--------|---------------|----------|
+| 1 |    1   |   auth.js     |Guilherme |
+| 2 |    8   | config.js     |Daniel    |
+| 3 |    9   |encomendas.js  |Diogo     |
+| 4 |    3   |utilizadores.js|Fabio     |
