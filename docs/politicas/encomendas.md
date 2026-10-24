@@ -19,10 +19,10 @@ não se aplica:A ambiente do logout do client.
 | Como se prova que foi cumprido? | Revisão humana — o revisor confirma no PR que não há concatenação de input nas queries |
 
 
-
 ## Responsabilidade
+
 | Papel | Nome |
 |---|---|
 | Dono da regra | Diogo |
-| Revisor da regra | Daniel |
-| Executor (testes/implementação) | Guilherme |
+| Revisor da regra | Fabio |
+| Executor (testes/implementação) | Daniel |
