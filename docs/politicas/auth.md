@@ -1,7 +1,7 @@
 ## Ameaça 1 
 Como atacante, quero iniciar sessão indicando apenas o email de outra pessoa, para conseguir obter um token válido em nome dela.
 
-## Objtivo 
+## Objetivo
 Emitir um token de autenticação apenas quando o utilizador apresenta um email registado e a palavra-passe correspondente.
 
 ## Âmbito
