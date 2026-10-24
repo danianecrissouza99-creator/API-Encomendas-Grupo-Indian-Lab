@@ -22,3 +22,12 @@ A API só pode emitir um token JWT quando o email existe e a palavra-passe apres
 | O que deve / não deve fazer? | Não deve emitir um token sem confirmar a palavra-passe; deve validar as credenciais (ex.: bcrypt.compare) antes de assinar o JWT |
 | Qual é o limite concreto? | 0 tokens emitidos sem verificação de palavra-passe; um pedido de login só com email tem de devolver 401 |
 | Como se prova que foi cumprido? | Automático — teste no CI que tenta login só com email e espera resposta 401 |
+
+
+## Responsabilidade
+
+| Papel | Nome |
+|---|---|
+| Dono da regra | Guilherme |
+| Revisor da regra | Daniane |
+| Executor (testes/implementação) | Diogo |
