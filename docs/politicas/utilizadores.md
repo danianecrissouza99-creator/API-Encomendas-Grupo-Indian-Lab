@@ -21,5 +21,10 @@ Responsabilidade
 | Papel | Nome |
 |---|---|
 | Dono da regra | Fabio |
+<<<<<<< Updated upstream
 | Revisor da regra | Diogo |
 | Executor (testes/implementação) | Daniel |
+=======
+| Revisor da regra | Daniel |
+| Executor (testes/implementação) | Guilherme | 
+>>>>>>> Stashed changes
