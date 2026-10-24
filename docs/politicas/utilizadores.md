@@ -20,6 +20,6 @@ Regra
 Responsabilidade
 | Papel | Nome |
 |---|---|
-| Dono da regra | Fabio |
+| Dono da regra | Fábio |
 | Revisor da regra | Diogo |
 | Executor (testes/implementação) | Daniel |
