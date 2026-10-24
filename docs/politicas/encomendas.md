@@ -23,6 +23,6 @@ não se aplica:A ambiente do logout do client.
 ## Responsabilidade
 | Papel | Nome |
 |---|---|
-| Dono da regra | Guilherme |
-| Revisor da regra | Daniane |
-| Executor (testes/implementação) | Diogo |
+| Dono da regra | Diogo |
+| Revisor da regra | Daniel |
+| Executor (testes/implementação) | Guilherme |
