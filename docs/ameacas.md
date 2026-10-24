@@ -41,4 +41,5 @@ Formato: «Como atacante, quero *fazer X*, para *conseguir Y*.»
 | 2 |    8   | config.js     | Daniel     |
 | 3 |    9   |encomendas.js  | Diogo      |
 | 4 |    3   |utilizadores.js| Fabio      |
+| 5 |   11   |    db.js      | Daniane    |
 
