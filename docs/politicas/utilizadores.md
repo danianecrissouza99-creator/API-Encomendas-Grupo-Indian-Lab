@@ -1,7 +1,7 @@
 ## Ameaça 3 
 Como atacante, quero saber informação de todos os utilizadores da db, para poder distribuir infromação sensivel.
 
-## Objtivo 
+## Objetivo
 Fazer com que o utilizador tenha permissão de receber informação de utilizador só de ele mesmo, sem poder alterar a query.
 
 ## Âmbito
