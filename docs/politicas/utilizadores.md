@@ -13,6 +13,13 @@ Regra
 | Pergunta | Resposta |
 |---|---|
 | Quem tem de cumprir? | Programador |
-| O que deve / não deve fazer? | Não deve devolver dados de utilizadores que não o próprio; deve filtrar sempre pelo utilizador autenticado (req.utilizador.sub) e não confiar em id vindo do pedido |
-| Qual é o limite concreto? | Um utilizador só acede aos seus próprios dados; um pedido ao perfil de outro utilizador tem de devolver 403/404 |
+| O que deve / não deve fazer? | Não deve devolver dados de outros utilizadores; deve filtrar sempre pelo utilizador autenticado (req.utilizador.sub) |
+| Qual é o limite concreto? | Um utilizador só acede aos seus dados; pedir o perfil de outro tem de devolver 403/404 |
 | Como se prova que foi cumprido? | Revisão humana — o revisor confirma no PR que o acesso é filtrado pelo utilizador autenticado |
+
+Responsabilidade
+| Papel | Nome |
+|---|---|
+| Dono da regra | Fabio |
+| Revisor da regra | Diogo |
+| Executor (testes/implementação) | Daniel |
