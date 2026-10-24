@@ -10,7 +10,8 @@ Aplica-se a: ao segredo `jwtSecret` definido em `src/config.js`, à forma como �
 Não se aplica a: outras chaves da configuração, como a `apiKeyPagamentos`, nem a tokens legítimos roubados ao utilizador ou à validação do algoritmo de assinatura do token.
 
 
-Regra
+## Regra
+
 | Pergunta | Resposta |
 |---|---|
 | Quem tem de cumprir? | Programador |
@@ -18,9 +19,10 @@ Regra
 | Qual é o limite concreto? | 0 segredos no código; o jwtSecret fixo tem de ser trocado e o gitleaks no CI termina com 0 deteções |
 | Como se prova que foi cumprido? | Automático — gitleaks no pipeline bloqueia o merge se encontrar um segredo |
 
-Responsabilidade
+## Responsabilidade
+
 | Papel | Nome |
 |---|---|
 | Dono da regra | Daniel |
 | Revisor da regra | Guilherme |
-| Executor (testes/implementação) | Fabio |
+| Executor (testes/implementação) | Daniane |

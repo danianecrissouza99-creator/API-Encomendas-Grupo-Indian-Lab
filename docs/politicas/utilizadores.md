@@ -9,7 +9,8 @@ Aplica-se a: ao endpoint do utilizadores, à validação de informações que o 
 
 Não se aplica a: a admins pois estes podem ter acesso às informações todas dos utilizdaors num dashboard de admin, se caso existir.
 
-Regra
+## Regra
+
 | Pergunta | Resposta |
 |---|---|
 | Quem tem de cumprir? | Programador |
@@ -17,14 +18,10 @@ Regra
 | Qual é o limite concreto? | Um utilizador só acede aos seus dados; pedir o perfil de outro tem de devolver 403/404 |
 | Como se prova que foi cumprido? | Revisão humana — o revisor confirma no PR que o acesso é filtrado pelo utilizador autenticado |
 
-Responsabilidade
+## Responsabilidade
+
 | Papel | Nome |
 |---|---|
 | Dono da regra | Fabio |
-<<<<<<< Updated upstream
-| Revisor da regra | Diogo |
-| Executor (testes/implementação) | Daniel |
-=======
 | Revisor da regra | Daniel |
-| Executor (testes/implementação) | Guilherme | 
->>>>>>> Stashed changes
+| Executor (testes/implementação) | Guilherme |
