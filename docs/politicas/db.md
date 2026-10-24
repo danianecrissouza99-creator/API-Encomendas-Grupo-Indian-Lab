@@ -24,4 +24,4 @@ Não se aplica a: dados de teste claramente fictícios e devidamente identificad
 |---|---|
 | Dono da regra | Daniane |
 | Revisor da regra | Guilherme |
-| Executor (testes/implementação) | Diogo |
+| Executor (testes/implementação) | Daniel |
