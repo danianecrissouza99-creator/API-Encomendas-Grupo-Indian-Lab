@@ -47,11 +47,11 @@ Cada regra tem a sua página com os detalhes e um responsável:
 
 | Código | Página | Problema que resolve | Responsável |
 |--------|--------|----------------------|-------------|
-| PS-01 | [Autenticação](docs/politicas/auth.md) | Entrar só com o email de outra pessoa | Guilherme |
-| PS-02 | [Configuração e segredos](docs/politicas/config.md) | Chave secreta do login à vista no código | Daniel |
-| PS-03 | [Encomendas](docs/politicas/encomendas.md) | Ataque pela pesquisa de encomendas (SQL injection) | Diogo |
-| PS-04 | [Utilizadores](docs/politicas/utilizadores.md) | Ver os dados de todos os utilizadores | Fabio |
-| PS-05 | [Base de dados](docs/politicas/db.md) | Dados pessoais e palavras-passe guardados no código | Daniane |
+| PS-01 | [Autenticação](docs/politicas/PS-01-auth.md) | Entrar só com o email de outra pessoa | Guilherme |
+| PS-02 | [Configuração e segredos](docs/politicas/PS-02-config.md) | Chave secreta do login à vista no código | Daniel |
+| PS-03 | [Encomendas](docs/politicas/PS-03-encomendas.md) | Ataque pela pesquisa de encomendas (SQL injection) | Diogo |
+| PS-04 | [Utilizadores](docs/politicas/PS-04-utilizadores.md) | Ver os dados de todos os utilizadores | Fabio |
+| PS-05 | [Base de dados](docs/politicas/PS-05-db.md) | Dados pessoais e palavras-passe guardados no código | Daniane |
 
 As outras falhas que encontramos mas ainda não tratámos ficam apontadas em `docs/ameacas.md`, com o motivo.
 
