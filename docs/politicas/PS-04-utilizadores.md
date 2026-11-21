@@ -1,27 +1,27 @@
-## Ameaça 3 
+# PS-04 · Política de utilizadores
+
+**Versão:** 0.2 · **Dono:** Fabio · **Data:** 2026-11-21
+
+## Ameaça a que responde
+
 Como atacante, quero saber informação de todos os utilizadores da db, para poder distribuir infromação sensivel.
 
 ## Objetivo
-Fazer com que o utilizador tenha permissão de receber informação de utilizador só de ele mesmo, sem poder alterar a query.
+
+Garantir que cada utilizador só recebe os seus próprios dados, sem conseguir alterar a query que os vai buscar.
 
 ## Âmbito
-Aplica-se a: ao endpoint do utilizadores, à validação de informações que o utilizador recebe da base de dados
 
-Não se aplica a: a admins pois estes podem ter acesso às informações todas dos utilizdaors num dashboard de admin, se caso existir.
+Aplica-se às rotas de utilizadores (`src/routes/utilizadores.js`) e aos dados de utilizador que a API devolve.
 
-## Regra
+Fica de fora: um eventual painel de administração, onde os administradores possam ver todos os utilizadores.
 
-| Pergunta | Resposta |
-|---|---|
-| Quem tem de cumprir? | Programador |
-| O que deve / não deve fazer? | Não deve devolver dados de outros utilizadores; deve filtrar sempre pelo utilizador autenticado (req.utilizador.sub) |
-| Qual é o limite concreto? | Um utilizador só acede aos seus dados; pedir o perfil de outro tem de devolver 403/404 |
-| Como se prova que foi cumprido? | Revisão humana — o revisor confirma no PR que o acesso é filtrado pelo utilizador autenticado |
+## Regras
 
-## Responsabilidade
+| # | Regra | Como se verifica |
+|---|-------|------------------|
+| 1 | A API devolve apenas os dados do utilizador autenticado (`req.utilizador.sub`): pedir os dados de outro utilizador devolve 403 ou 404 | Revisão por par |
 
-| Papel | Nome |
-|---|---|
-| Dono da regra | Fabio |
-| Revisor da regra | Daniel |
-| Executor (testes/implementação) | Guilherme |
+## Responsabilidades
+
+Cumpre: programadores. Aprova exceções: dono da política (Fabio). Revê: Daniel. Implementa: Guilherme.

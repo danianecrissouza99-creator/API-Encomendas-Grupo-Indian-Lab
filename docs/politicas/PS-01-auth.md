@@ -1,33 +1,27 @@
-## Ameaça 1 
+# PS-01 · Política de autenticação
+
+**Versão:** 0.2 · **Dono:** Guilherme · **Data:** 2026-11-21
+
+## Ameaça a que responde
+
 Como atacante, quero iniciar sessão indicando apenas o email de outra pessoa, para conseguir obter um token válido em nome dela.
 
 ## Objetivo
+
 Emitir um token de autenticação apenas quando o utilizador apresenta um email registado e a palavra-passe correspondente.
 
 ## Âmbito
-Aplica-se a: ao endpoint do POST/LOGIN, à validação da emissão do Token JWT e das credenciais.
 
-Não se aplica a: recuperação ou alteração de palavra-passe, nem a acessos obtidos por outros meios, como o roubo de um token já emitido.
+Aplica-se ao endpoint `POST /auth/login`, à validação das credenciais e à emissão do token JWT.
 
-## Regra de segurança
+Fica de fora: a recuperação ou alteração de palavra-passe, e os acessos obtidos por outros meios, como o roubo de um token já emitido.
 
-A API só pode emitir um token JWT quando o email existe e a palavra-passe apresentada corresponde à palavra-passe dessa conta. Se o email não existir ou a palavra-passe estiver errada, o login deve ser recusado e nenhum token pode ser devolvido.
+## Regras
 
+| # | Regra | Como se verifica |
+|---|-------|------------------|
+| 1 | A API recusa com 401, sem devolver token, qualquer login com email inexistente ou palavra-passe errada ou em falta: 0 tokens emitidos sem verificar a palavra-passe | node --test seguranca/ps-01-auth.js |
 
-## Regra
+## Responsabilidades
 
-| Pergunta | Resposta |
-|---|---|
-| Quem tem de cumprir? | Programador |
-| O que deve / não deve fazer? | Não deve emitir um token sem confirmar a palavra-passe; deve validar as credenciais (ex.: bcrypt.compare) antes de assinar o JWT |
-| Qual é o limite concreto? | 0 tokens emitidos sem verificação de palavra-passe; um pedido de login só com email tem de devolver 401 |
-| Como se prova que foi cumprido? | Automático — teste no CI que tenta login só com email e espera resposta 401 |
-
-
-## Responsabilidade
-
-| Papel | Nome |
-|---|---|
-| Dono da regra | Guilherme |
-| Revisor da regra | Daniane |
-| Executor (testes/implementação) | Diogo |
+Cumpre: programadores. Aprova exceções: dono da política (Guilherme). Revê: Daniane. Implementa: Diogo.
