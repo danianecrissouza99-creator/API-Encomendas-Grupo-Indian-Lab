@@ -1,0 +1,33 @@
+# Quem tem de rever cada parte do repositório.
+# Cada caminho tem dois donos: quem altera um ficheiro seu precisa da aprovação do outro.
+# Quando várias linhas servem, vale a última.
+
+# Por omissão: a responsável do repositório e o Daniel
+*                                    @danianecrissouza99-creator @daniellssilva0501-cmd
+
+# Documento geral, pipeline e esta lista
+/SECURITY.md                         @danianecrissouza99-creator @daniellssilva0501-cmd
+/CODEOWNERS                          @danianecrissouza99-creator @daniellssilva0501-cmd
+/.github/                            @danianecrissouza99-creator @daniellssilva0501-cmd
+/.gitleaks.toml                      @daniellssilva0501-cmd @GuilhermeGSFerreira
+
+# PS-01 · autenticação — dono Guilherme, revisora Daniane
+/docs/politicas/PS-01-auth.md        @GuilhermeGSFerreira @danianecrissouza99-creator
+/src/routes/auth.js                  @GuilhermeGSFerreira @danianecrissouza99-creator
+/seguranca/ps-01-auth.js             @GuilhermeGSFerreira @danianecrissouza99-creator
+
+# PS-02 · configuração e segredos — dono Daniel, revisor Guilherme
+/docs/politicas/PS-02-config.md      @daniellssilva0501-cmd @GuilhermeGSFerreira
+/src/config.js                       @daniellssilva0501-cmd @GuilhermeGSFerreira
+
+# PS-03 · encomendas — dono Diogo, revisor Fabio
+/docs/politicas/PS-03-encomendas.md  @Mr-Diogo-Santos @ferrraz
+/src/routes/encomendas.js            @Mr-Diogo-Santos @ferrraz
+
+# PS-04 · utilizadores — dono Fabio, revisor Daniel
+/docs/politicas/PS-04-utilizadores.md  @ferrraz @daniellssilva0501-cmd
+/src/routes/utilizadores.js            @ferrraz @daniellssilva0501-cmd
+
+# PS-05 · dados pessoais — dona Daniane, revisor Diogo
+/docs/politicas/PS-05-db.md          @danianecrissouza99-creator @Mr-Diogo-Santos
+/src/db.js                           @danianecrissouza99-creator @Mr-Diogo-Santos
