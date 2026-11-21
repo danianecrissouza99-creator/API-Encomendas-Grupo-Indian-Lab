@@ -1,6 +1,6 @@
 // Gate da PS-01 — o login tem de exigir a palavra-passe.
 // Corre com: node --test seguranca/ps-01-auth.js
-// Fica fora de test/ de propósito: o npm test (check obrigatório «testes»)
+// Fica fora de test/ de propósito: o `npm test` (check obrigatório «testes»)
 // não o corre, por isso uma falha aqui não bloqueia os merges enquanto a
 // correção do login não estiver feita.
 
@@ -17,7 +17,7 @@ async function pedirLogin(corpo) {
   const { port } = servidor.address();
 
   try {
-    const resposta = await fetch(http://127.0.0.1:${port}/auth/login, {
+    const resposta = await fetch(`http://127.0.0.1:${port}/auth/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(corpo),
