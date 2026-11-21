@@ -25,3 +25,11 @@ Fica de fora: a recuperação ou alteração de palavra-passe, e os acessos obti
 ## Responsabilidades
 
 Cumpre: programadores. Aprova exceções: dono da política (Guilherme). Revê: Daniane. Implementa: Diogo.
+
+## Verificação automática
+
+- **Job:** `ps-01-autenticacao`, em `.github/workflows/seguranca.yml`.
+- **Comando:** `node --test seguranca/ps-01-auth.js`.
+- **Quando corre:** em cada pull request e em cada push para `main`.
+- **Estado:** vermelho desde a primeira execução. O login atual emite um token só com o email, que é a falha herdada que esta regra proíbe. Execução: https://github.com/danianecrissouza99-creator/API-Encomendas-Grupo-Indian-Lab/actions/runs/44930823879
+- **Passa a bloquear:** quando a correção do login ficar verde, o job entra nos checks obrigatórios da `main`.
