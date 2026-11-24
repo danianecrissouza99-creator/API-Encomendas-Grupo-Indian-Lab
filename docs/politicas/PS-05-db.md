@@ -25,3 +25,11 @@ Fica de fora: dados de teste claramente fictícios e identificados como tal, e f
 ## Responsabilidades
 
 Cumpre: programadores. Aprova exceções: dono da política (Daniane). Revê: Diogo. Implementa: Fabio.
+
+## Verificação automática
+
+Não tem job: nenhum comando verifica esta regra, por isso é imposta por configuração. O gitleaks não serve aqui: dá 0 deteções mesmo com os dados pessoais em `src/db.js`.
+
+- A `main` só aceita alterações por pull request, com 1 aprovação e sem exceções, nem para administradores.
+- O `CODEOWNERS` pede a revisão de Daniane ou Diogo sempre que `src/db.js` ou esta política mudam.
+- O revisor confirma no PR que não entram dados pessoais nem `passwordHash` reais em `src/`, antes de aprovar.

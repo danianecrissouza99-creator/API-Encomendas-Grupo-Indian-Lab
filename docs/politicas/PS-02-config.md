@@ -25,3 +25,11 @@ Fica de fora: tokens legítimos roubados ao utilizador e a validação do algori
 ## Responsabilidades
 
 Cumpre: programadores. Aprova exceções: dono da política (Daniel). Revê: Guilherme. Implementa: Daniane.
+
+## Verificação automática
+
+- **Job:** `ps-02-segredos`, em `.github/workflows/seguranca.yml`.
+- **Comando:** `gitleaks detect --source . --config .gitleaks.toml --redact`, sobre o histórico completo do ramo.
+- **Quando corre:** em cada pull request e em cada push para `main`.
+- **Estado:** verde. Os segredos herdados foram removidos do histórico dos ramos em 2026-11-06, antes de este job existir. Execução: https://github.com/danianecrissouza99-creator/API-Encomendas-Grupo-Indian-Lab/actions/runs/44930823879
+- **Limite do controlo:** o job analisa os ramos, não os `refs/pull/*` antigos do GitHub; esses dependem do pedido feito ao GitHub Support.
