@@ -25,3 +25,11 @@ Fica de fora: um eventual painel de administração, onde os administradores pos
 ## Responsabilidades
 
 Cumpre: programadores. Aprova exceções: dono da política (Fabio). Revê: Daniel. Implementa: Guilherme.
+
+## Verificação automática
+
+Não tem job: nenhum comando verifica esta regra, por isso é imposta por configuração.
+
+- A `main` só aceita alterações por pull request, com 1 aprovação e sem exceções, nem para administradores.
+- O `CODEOWNERS` pede a revisão de Fabio ou Daniel sempre que `src/routes/utilizadores.js` ou esta política mudam.
+- O revisor confirma no PR que a rota devolve apenas os dados do utilizador autenticado, antes de aprovar.
