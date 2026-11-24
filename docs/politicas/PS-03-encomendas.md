@@ -25,3 +25,11 @@ Fica de fora: o logout e o ambiente do cliente.
 ## Responsabilidades
 
 Cumpre: programadores. Aprova exceções: dono da política (Diogo). Revê: Fabio. Implementa: Daniel.
+
+## Verificação automática
+
+Não tem job: nenhum comando verifica esta regra, por isso é imposta por configuração.
+
+- A `main` só aceita alterações por pull request, com 1 aprovação e sem exceções, nem para administradores.
+- O `CODEOWNERS` pede a revisão de Diogo ou Fabio sempre que `src/routes/encomendas.js` ou esta política mudam.
+- O revisor confirma no PR que nenhuma query junta dados do pedido por concatenação, antes de aprovar.
