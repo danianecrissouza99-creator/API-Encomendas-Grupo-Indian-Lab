@@ -40,5 +40,5 @@ Regra 2:
 - **Job:** `ps-05-dados-pessoais`, em `.github/workflows/seguranca.yml`. Criado de raiz: o catálogo não tem nenhum job que verifique esta regra, e o gitleaks não deteta NIF nem hashes de palavra-passe.
 - **Comando:** `node --test seguranca/ps-05-dados-pessoais.js`. Procura em `src/` prefixos de hash bcrypt, campos `passwordHash` com valor escrito e campos `nif` com 9 dígitos. Indica só o ficheiro e a linha, nunca o valor encontrado.
 - **Quando corre:** em cada pull request e em cada push para `main`.
-- **Estado:** vermelho desde a primeira execução. `src/db.js` tem dois utilizadores com `passwordHash` e NIF escritos no código, que é a falha herdada que esta regra proíbe. Execução: COLAR-LINK-VERMELHO
+- **Estado:** vermelho desde a primeira execução. `src/db.js` tem dois utilizadores com `passwordHash` e NIF escritos no código, que é a falha herdada que esta regra proíbe. Execução: https://github.com/DanianeSouza/API-Encomendas-Grupo-Indian-Lab/actions/runs/46161054537
 - **Passa a bloquear:** quando os dados saírem de `src/` e o job ficar verde, entra nos checks obrigatórios da `main`.

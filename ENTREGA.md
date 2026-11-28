@@ -27,7 +27,7 @@ Os jobs da PS-03 e da PS-06 entraram depois da primeira execução. A execução
 
 O job da PS-04 (regra 2) entrou depois. A execução vermelha com os cinco jobs: https://github.com/DanianeSouza/API-Encomendas-Grupo-Indian-Lab/actions/runs/46142457550
 
-O job da PS-05 (regra 2) foi criado de raiz, porque o catálogo não tinha nenhum para esta regra. A execução vermelha com os seis jobs: COLAR-LINK-VERMELHO
+O job da PS-05 (regra 2) foi criado de raiz, porque o catálogo não tinha nenhum para esta regra. A execução vermelha com os seis jobs: https://github.com/DanianeSouza/API-Encomendas-Grupo-Indian-Lab/actions/runs/46161054537
 
 ## O que se impõe por configuração
 
