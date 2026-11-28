@@ -1,0 +1,11 @@
+rules:
+  - id: sql-por-concatenacao
+    languages: [javascript]
+    severity: ERROR
+    message: >-
+      Consulta SQL construida por concatenacao ou interpolacao de strings.
+      Usar consulta parametrizada.
+    patterns:
+      - pattern-either:
+          - pattern: $DB.query("..." + $X, ...)
+          - pattern: $DB.query(`...${$X}...`, ...)

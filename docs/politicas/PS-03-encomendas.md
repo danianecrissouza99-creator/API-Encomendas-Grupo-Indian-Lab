@@ -1,6 +1,6 @@
 # PS-03 · Política de encomendas
 
-**Versão:** 0.2 · **Dono:** Diogo · **Data:** 2026-11-21
+**Versão:** 0.3 · **Dono:** Diogo · **Data:** 2026-11-28
 
 ## Ameaça a que responde
 
@@ -20,7 +20,7 @@ Fica de fora: o logout e o ambiente do cliente.
 
 | # | Regra | Como se verifica |
 |---|-------|------------------|
-| 1 | O programador não concatena dados do pedido numa query: todas as consultas com input usam parâmetros (ex.: `WHERE id = ?`), com 0 queries montadas por concatenação | Revisão por par |
+| 1 | O programador não concatena dados do pedido numa query: todas as consultas com input usam parâmetros (ex.: `WHERE id = ?`), com 0 queries montadas por concatenação | semgrep --config .semgrep/ --error --metrics=off src/ |
 
 ## Responsabilidades
 
@@ -28,8 +28,8 @@ Cumpre: programadores. Aprova exceções: dono da política (Diogo). Revê: Fabi
 
 ## Verificação automática
 
-Não tem job: nenhum comando verifica esta regra, por isso é imposta por configuração.
-
-- A `main` só aceita alterações por pull request, com 1 aprovação e sem exceções, nem para administradores.
-- O `CODEOWNERS` pede a revisão de Diogo ou Fabio sempre que `src/routes/encomendas.js` ou esta política mudam.
-- O revisor confirma no PR que nenhuma query junta dados do pedido por concatenação, antes de aprovar.
+- **Job:** `ps-03-sql-parametrizado`, em `.github/workflows/seguranca.yml`.
+- **Comando:** `semgrep --config .semgrep/ --error --metrics=off src/`, com a regra `sql-por-concatenacao` de `.semgrep/regras.yml`.
+- **Quando corre:** em cada pull request e em cada push para `main`.
+- **Estado:** vermelho desde a primeira execução. Há consultas montadas com dados do pedido em `src/routes/encomendas.js` (concatenação) e em `src/routes/utilizadores.js` (interpolação), que é a falha herdada que esta regra proíbe. Execução: COLAR-LINK-VERMELHO
+- **Limite do controlo:** a regra apanha as duas formas de construir SQL que existem neste código. Uma forma nova que a regra não conheça passa; por isso o `CODEOWNERS` continua a pedir a revisão de Diogo ou Fabio.

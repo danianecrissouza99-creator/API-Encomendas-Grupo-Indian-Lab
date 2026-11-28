@@ -32,13 +32,16 @@ Formato: «Como atacante, quero *fazer X*, para *conseguir Y*.»
 
 13 Como atacante, quero enviar tokens mal formados ou assinados com outro algoritmo, para conseguir que a API os aceite como válidos. DANIEL.
 
+14. Como atacante, quero explorar uma vulnerabilidade conhecida numa dependência desatualizada (ex.: `lodash` 4.17.11), para conseguir comprometer a API sem precisar de encontrar uma falha no nosso código. DANIANE
+
 
 ## Ameaças escolhidas
 
-Cinco ameaças, uma por elemento do grupo. Cada uma tem uma política em `docs/politicas/`.
+Seis ameaças. Cada uma tem uma política em `docs/politicas/`.
 
 - **A1** (ameaça 1) — Login só com o email de outra pessoa · `PS-01` · Dono: Guilherme
 - **A8** (ameaça 8) — Forjar um JWT com o segredo exposto no código · `PS-02` · Dono: Daniel
 - **A9** (ameaça 9) — Injeção de SQL pelo `id` das encomendas · `PS-03` · Dono: Diogo
 - **A3** (ameaça 3) — Obter os dados de todos os utilizadores · `PS-04` · Dono: Fabio
 - **A11** (ameaça 11) — Dados pessoais e `passwordHash` escritos em `db.js` · `PS-05` · Dono: Daniane
+- **A14** (ameaça 14) — Vulnerabilidade conhecida numa dependência (`lodash` 4.17.11) · `PS-06` · Dono: Daniane

@@ -42,5 +42,6 @@ As regras vivem nas políticas específicas. Este ficheiro não as repete.
 | PS-03 | [Encomendas](docs/politicas/PS-03-encomendas.md) | A9 — Injeção de SQL pelo `id` das encomendas | Diogo |
 | PS-04 | [Utilizadores](docs/politicas/PS-04-utilizadores.md) | A3 — Dados de todos os utilizadores | Fabio |
 | PS-05 | [Dados pessoais](docs/politicas/PS-05-db.md) | A11 — Dados pessoais e `passwordHash` em `db.js` | Daniane |
+| PS-06 | [Dependências](docs/politicas/PS-06-dependencias.md) | A14 — Vulnerabilidade conhecida numa dependência | Daniane |
 
 As outras ameaças que encontrámos, mas ainda não tratámos, ficam apontadas em `docs/ameacas.md`.

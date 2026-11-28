@@ -23,6 +23,7 @@
 # PS-03 · encomendas — dono Diogo, revisor Fabio
 /docs/politicas/PS-03-encomendas.md  @Mr-Diogo-Santos @ferrraz
 /src/routes/encomendas.js            @Mr-Diogo-Santos @ferrraz
+/.semgrep/                           @Mr-Diogo-Santos @ferrraz
 
 # PS-04 · utilizadores — dono Fabio, revisor Daniel
 /docs/politicas/PS-04-utilizadores.md  @ferrraz @daniellssilva0501-cmd
@@ -31,3 +32,8 @@
 # PS-05 · dados pessoais — dona Daniane, revisor Diogo
 /docs/politicas/PS-05-db.md          @danianecrissouza99-creator @Mr-Diogo-Santos
 /src/db.js                           @danianecrissouza99-creator @Mr-Diogo-Santos
+
+# PS-06 · dependências — dona Daniane, revisor Daniel
+/docs/politicas/PS-06-dependencias.md  @danianecrissouza99-creator @daniellssilva0501-cmd
+/package.json                          @danianecrissouza99-creator @daniellssilva0501-cmd
+/package-lock.json                     @danianecrissouza99-creator @daniellssilva0501-cmd
