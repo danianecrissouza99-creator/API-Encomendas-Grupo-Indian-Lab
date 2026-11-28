@@ -21,7 +21,7 @@
 | `ps-03-sql-parametrizado` | PS-03 | vermelho | há consultas SQL montadas com dados do pedido em `encomendas.js` e `utilizadores.js` |
 | `ps-06-dependencias` | PS-06 | vermelho | o `lodash` 4.17.11 tem vulnerabilidades altas e críticas |
 
-Os jobs da PS-03 e da PS-06 entraram depois da primeira execução. A execução vermelha com os quatro jobs: COLAR-LINK-VERMELHO
+Os jobs da PS-03 e da PS-06 entraram depois da primeira execução. A execução vermelha com os quatro jobs: https://github.com/danianecrissouza99-creator/API-Encomendas-Grupo-Indian-Lab/actions/runs/46134921260
 
 ## O que se impõe por configuração
 

@@ -31,5 +31,5 @@ Cumpre: programadores. Aprova exceções: dono da política (Diogo). Revê: Fabi
 - **Job:** `ps-03-sql-parametrizado`, em `.github/workflows/seguranca.yml`.
 - **Comando:** `semgrep --config .semgrep/ --error --metrics=off src/`, com a regra `sql-por-concatenacao` de `.semgrep/regras.yml`.
 - **Quando corre:** em cada pull request e em cada push para `main`.
-- **Estado:** vermelho desde a primeira execução. Há consultas montadas com dados do pedido em `src/routes/encomendas.js` (concatenação) e em `src/routes/utilizadores.js` (interpolação), que é a falha herdada que esta regra proíbe. Execução: COLAR-LINK-VERMELHO
+- **Estado:** vermelho desde a primeira execução. Há consultas montadas com dados do pedido em `src/routes/encomendas.js` (concatenação) e em `src/routes/utilizadores.js` (interpolação), que é a falha herdada que esta regra proíbe. Execução: https://github.com/danianecrissouza99-creator/API-Encomendas-Grupo-Indian-Lab/actions/runs/46134921260
 - **Limite do controlo:** a regra apanha as duas formas de construir SQL que existem neste código. Uma forma nova que a regra não conheça passa; por isso o `CODEOWNERS` continua a pedir a revisão de Diogo ou Fabio.

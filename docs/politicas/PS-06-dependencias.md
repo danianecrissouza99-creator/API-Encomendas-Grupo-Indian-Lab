@@ -31,5 +31,5 @@ Cumpre: programadores. Aprova exceções: dona da política (Daniane). Revê: Da
 - **Job:** `ps-06-dependencias`, em `.github/workflows/seguranca.yml`.
 - **Comando:** `npm audit --audit-level=high`, depois de `npm ci`.
 - **Quando corre:** em cada pull request e em cada push para `main`.
-- **Estado:** vermelho desde a primeira execução. O `lodash` 4.17.11 herdado tem vulnerabilidades de gravidade alta e crítica. Execução: COLAR-LINK-VERMELHO
+- **Estado:** vermelho desde a primeira execução. O `lodash` 4.17.11 herdado tem vulnerabilidades de gravidade alta e crítica. Execução: https://github.com/danianecrissouza99-creator/API-Encomendas-Grupo-Indian-Lab/actions/runs/46134921260
 - **Passa a bloquear:** quando as dependências forem atualizadas e o job ficar verde, entra nos checks obrigatórios da `main`.
