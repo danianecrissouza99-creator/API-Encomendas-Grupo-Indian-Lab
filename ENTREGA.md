@@ -18,6 +18,10 @@
 |-----|----------|-----------|--------|
 | `ps-01-autenticacao` | PS-01 | vermelho | o login emite token só com o email |
 | `ps-02-segredos` | PS-02 | verde | os segredos herdados foram removidos do histórico em 2026-11-06, antes de o job existir |
+| `ps-03-sql-parametrizado` | PS-03 | vermelho | há consultas SQL montadas com dados do pedido em `encomendas.js` e `utilizadores.js` |
+| `ps-06-dependencias` | PS-06 | vermelho | o `lodash` 4.17.11 tem vulnerabilidades altas e críticas |
+
+Os jobs da PS-03 e da PS-06 entraram depois da primeira execução. A execução vermelha com os quatro jobs: https://github.com/danianecrissouza99-creator/API-Encomendas-Grupo-Indian-Lab/actions/runs/46134921260
 
 ## O que se impõe por configuração
 

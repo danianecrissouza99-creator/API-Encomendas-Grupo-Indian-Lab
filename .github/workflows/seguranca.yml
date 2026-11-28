@@ -52,3 +52,39 @@ jobs:
 
       - name: gitleaks detect --source . --config .gitleaks.toml --redact
         run: gitleaks detect --source . --config .gitleaks.toml --redact
+
+  # PS-03 · docs/politicas/PS-03-encomendas.md · dono: Diogo
+  ps-03-sql-parametrizado:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Obter código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar semgrep 1.185.0
+        run: pip install semgrep==1.185.0
+
+      - name: semgrep --config .semgrep/ --error --metrics=off src/
+        run: semgrep --config .semgrep/ --error --metrics=off src/
+
+  # PS-06 · docs/politicas/PS-06-dependencias.md · dona: Daniane
+  ps-06-dependencias:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Obter código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Instalar exatamente o que está no lockfile
+        run: npm ci
+
+      - name: npm audit --audit-level=high
+        run: npm audit --audit-level=high
