@@ -28,6 +28,7 @@
 # PS-04 · utilizadores — dono Fabio, revisor Daniel
 /docs/politicas/PS-04-utilizadores.md  @ferrraz @daniellssilva0501-cmd
 /src/routes/utilizadores.js            @ferrraz @daniellssilva0501-cmd
+/seguranca/ps-04-exposicao.js          @ferrraz @daniellssilva0501-cmd
 
 # PS-05 · dados pessoais — dona Daniane, revisor Diogo
 /docs/politicas/PS-05-db.md          @danianecrissouza99-creator @Mr-Diogo-Santos
