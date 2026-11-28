@@ -20,8 +20,11 @@
 | `ps-02-segredos` | PS-02 | verde | os segredos herdados foram removidos do histórico em 2026-11-06, antes de o job existir |
 | `ps-03-sql-parametrizado` | PS-03 | vermelho | há consultas SQL montadas com dados do pedido em `encomendas.js` e `utilizadores.js` |
 | `ps-06-dependencias` | PS-06 | vermelho | o `lodash` 4.17.11 tem vulnerabilidades altas e críticas |
+| `ps-04-exposicao-dados` | PS-04 | vermelho | `/utilizadores/me` devolve o `passwordHash` e o `nif` |
 
 Os jobs da PS-03 e da PS-06 entraram depois da primeira execução. A execução vermelha com os quatro jobs: https://github.com/danianecrissouza99-creator/API-Encomendas-Grupo-Indian-Lab/actions/runs/46134921260
+
+O job da PS-04 (regra 2) entrou depois. A execução vermelha com os cinco jobs: https://github.com/danianecrissouza99-creator/API-Encomendas-Grupo-Indian-Lab/actions/runs/46142457550
 
 ## O que se impõe por configuração
 

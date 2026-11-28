@@ -88,3 +88,23 @@ jobs:
 
       - name: npm audit --audit-level=high
         run: npm audit --audit-level=high
+
+  # PS-04 (regra 2) · docs/politicas/PS-04-utilizadores.md · dono: Fabio
+  ps-04-exposicao-dados:
+    runs-on: ubuntu-24.04
+    env:
+      JWT_SECRET: ${{ secrets.JWT_SECRET }}
+    steps:
+      - name: Obter código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: node --test seguranca/ps-04-exposicao.js
+        run: node --test seguranca/ps-04-exposicao.js
