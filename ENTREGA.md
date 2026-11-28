@@ -21,10 +21,13 @@
 | `ps-03-sql-parametrizado` | PS-03 | vermelho | há consultas SQL montadas com dados do pedido em `encomendas.js` e `utilizadores.js` |
 | `ps-06-dependencias` | PS-06 | vermelho | o `lodash` 4.17.11 tem vulnerabilidades altas e críticas |
 | `ps-04-exposicao-dados` | PS-04 | vermelho | `/utilizadores/me` devolve o `passwordHash` e o `nif` |
+| `ps-05-dados-pessoais` | PS-05 | vermelho | `src/db.js` tem `passwordHash` e NIF escritos no código (job criado de raiz) |
 
 Os jobs da PS-03 e da PS-06 entraram depois da primeira execução. A execução vermelha com os quatro jobs: https://github.com/DanianeSouza/API-Encomendas-Grupo-Indian-Lab/actions/runs/46134921260
 
 O job da PS-04 (regra 2) entrou depois. A execução vermelha com os cinco jobs: https://github.com/DanianeSouza/API-Encomendas-Grupo-Indian-Lab/actions/runs/46142457550
+
+O job da PS-05 (regra 2) foi criado de raiz, porque o catálogo não tinha nenhum para esta regra. A execução vermelha com os seis jobs: https://github.com/DanianeSouza/API-Encomendas-Grupo-Indian-Lab/actions/runs/46161054537
 
 ## O que se impõe por configuração
 

@@ -108,3 +108,18 @@ jobs:
 
       - name: node --test seguranca/ps-04-exposicao.js
         run: node --test seguranca/ps-04-exposicao.js
+
+  # PS-05 (regra 2) · docs/politicas/PS-05-db.md · dona: Daniane · job criado de raiz
+  ps-05-dados-pessoais:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Obter código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: node --test seguranca/ps-05-dados-pessoais.js
+        run: node --test seguranca/ps-05-dados-pessoais.js
