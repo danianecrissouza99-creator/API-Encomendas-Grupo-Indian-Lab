@@ -33,6 +33,7 @@
 # PS-05 · dados pessoais — dona Daniane, revisor Diogo
 /docs/politicas/PS-05-db.md          @DanianeSouza @Mr-Diogo-Santos
 /src/db.js                           @DanianeSouza @Mr-Diogo-Santos
+/seguranca/ps-05-dados-pessoais.js     @DanianeSouza @Mr-Diogo-Santos
 
 # PS-06 · dependências — dona Daniane, revisor Daniel
 /docs/politicas/PS-06-dependencias.md  @DanianeSouza @daniellssilva0501-cmd
