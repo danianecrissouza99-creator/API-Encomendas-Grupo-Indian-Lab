@@ -7,7 +7,7 @@
 | 1 | Ameaças | `docs/ameacas.md` |
 | 2 | Política | `SECURITY.md` |
 | 3 | Pipeline | `.github/workflows/seguranca.yml` |
-| 4 | Execução **VERMELHA** | https://github.com/danianecrissouza99-creator/API-Encomendas-Grupo-Indian-Lab/actions/runs/44930823879 |
+| 4 | Execução **VERMELHA** | https://github.com/DanianeSouza/API-Encomendas-Grupo-Indian-Lab/actions/runs/44930823879 |
 | 5 | Execução **VERDE** | [colar link] |
 | 6 | PR que abrimos no grupo __ | [colar link] |
 | 7 | PR que revimos | [colar link] |
@@ -22,9 +22,9 @@
 | `ps-06-dependencias` | PS-06 | vermelho | o `lodash` 4.17.11 tem vulnerabilidades altas e críticas |
 | `ps-04-exposicao-dados` | PS-04 | vermelho | `/utilizadores/me` devolve o `passwordHash` e o `nif` |
 
-Os jobs da PS-03 e da PS-06 entraram depois da primeira execução. A execução vermelha com os quatro jobs: https://github.com/danianecrissouza99-creator/API-Encomendas-Grupo-Indian-Lab/actions/runs/46134921260
+Os jobs da PS-03 e da PS-06 entraram depois da primeira execução. A execução vermelha com os quatro jobs: https://github.com/DanianeSouza/API-Encomendas-Grupo-Indian-Lab/actions/runs/46134921260
 
-O job da PS-04 (regra 2) entrou depois. A execução vermelha com os cinco jobs: https://github.com/danianecrissouza99-creator/API-Encomendas-Grupo-Indian-Lab/actions/runs/46142457550
+O job da PS-04 (regra 2) entrou depois. A execução vermelha com os cinco jobs: https://github.com/DanianeSouza/API-Encomendas-Grupo-Indian-Lab/actions/runs/46142457550
 
 ## O que se impõe por configuração
 
